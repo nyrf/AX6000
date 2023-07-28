@@ -20,3 +20,5 @@ mkdir -p feeds/luci/applications/luci-app-openclash/root/etc/openclash/core
 mv /tmp/clash feeds/luci/applications/luci-app-openclash/root/etc/openclash/core/clash >/dev/null 2>&1
 rm -rf /tmp/clash.tar.gz >/dev/null 2>&1
 ##---------------------------------------------------------
+
+git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/luci-app-adguardhome
