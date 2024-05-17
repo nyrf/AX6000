@@ -7,7 +7,7 @@
 # https://github.com/P3TERX/Actions-OpenWrt
 # Description: Build OpenWrt using GitHub Actions
 #
-name: Redmi-AX6000-OpenWrt
+name: Redmi-AX6000-OpenWrt-Mini
 
 on:
   repository_dispatch:
