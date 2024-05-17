@@ -24,7 +24,7 @@ env:
   REPO_URL: https://github.com/openwrt/openwrt
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: OpenWrt/Redmi-AX6000/.config
+  CONFIG_FILE: OpenWrt/Redmi-AX6000/.sconfig
   DIY_P1_SH: OpenWrt/Redmi-AX6000/diy-part1.sh
   DIY_P2_SH: OpenWrt/Redmi-AX6000/diy-part2.sh
   SSH_ACTIONS: false
