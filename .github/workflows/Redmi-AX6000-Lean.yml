@@ -25,10 +25,9 @@ env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
-  FILES_PATH: OpenWrt/Redmi-AX6000/files
-  CONFIG_FILE: OpenWrt/Redmi-AX6000/.new_config
-  DIY_P1_SH: OpenWrt/Redmi-AX6000/diy-part1.sh
-  DIY_P2_SH: OpenWrt/Redmi-AX6000/diy-part2.sh
+  CONFIG_FILE: Lean/.config
+  DIY_P1_SH: Lean/diy-part1.sh
+  DIY_P2_SH: Lean/diy-part2.sh
   SSH_ACTIONS: false
   UPLOAD_FIRMWARE: true
   UPLOAD_RELEASE: true
@@ -80,7 +79,7 @@ jobs:
       
     - name: 加载config & DIY_P2_SH
       run: |
-        [ -e $FILES_PATH ] && mv $FILES_PATH openwrt/files
+        # [ -e $FILES_PATH ] && mv $FILES_PATH openwrt/files
         [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
         chmod +x $DIY_P2_SH
         cd openwrt
